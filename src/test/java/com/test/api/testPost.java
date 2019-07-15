@@ -36,7 +36,7 @@ public class testPost {
     public void beforeClass() throws ClientProtocolException, IOException {
         client = new restfulClient();
 
-    //用NameValuePair的list来添加请求主体参数
+        //用NameValuePair的list来添加请求主体参数
         List<NameValuePair> params = new ArrayList<NameValuePair>();
         params.add(new BasicNameValuePair("userName", "18512391083"));
         params.add(new BasicNameValuePair("userPwd", "123456"));
@@ -57,7 +57,7 @@ public class testPost {
 
         System.out.println(responseBody);
         jParser = new JSONParser();
-        name = jParser.getName(responseBody);
+        name = jParser.getProductName(responseBody);
     }
 
 

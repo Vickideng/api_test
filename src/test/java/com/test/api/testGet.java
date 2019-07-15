@@ -34,6 +34,6 @@ public class testGet {
 
         //调用JSONParser获取反馈中的商品信息
         jParser = new JSONParser();
-        Name = jParser.getName(responseBody);
+        Name = jParser.getProductName(responseBody);
     }
 }
